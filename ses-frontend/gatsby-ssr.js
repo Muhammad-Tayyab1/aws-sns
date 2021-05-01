@@ -1,0 +1,1 @@
+export {default as wrapRootElement} from "./src/warp-root-element";
