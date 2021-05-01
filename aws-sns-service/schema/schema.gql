@@ -1,0 +1,18 @@
+type Event {
+  result: String
+}
+
+input MessageInput {
+  to: String!
+  from: String!
+  subject: String!
+  text: String!
+}
+
+type Query {
+  getEvent: [Event]
+}
+
+type Mutation {
+  sendMail(message: MessageInput!): Event
+}
